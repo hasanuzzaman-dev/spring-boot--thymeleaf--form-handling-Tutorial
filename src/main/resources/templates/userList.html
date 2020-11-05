@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+    <style type="text/css">
+        span{
+            display: inline-block;
+            margin: 5px;
+            width: 200px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div align="center">
+    <h1>Registered User</h1>
+    <span>Full name: </span><span th:text="${user.name}"></span><br>
+    <span>Email : </span><span th:text="${user.email}"></span><br>
+    <span>Password: </span> <span th:text="${user.password}"></span><br>
+    <span>Date of Birth: </span><span th:text="${user.dateOfBirth}"></span><br>
+    <span>Profession: </span><span th:text="${user.profession}"></span><br>
+    <span>Married ?: </span><span th:text="${user.married}"></span><br>
+    <span>Gender: </span><span th:text="${user.gender}"></span><br>
+    <span>Note: </span><span th:text="${user.note}"></span><br>
+
+</div>
+
+</body>
+</html>
